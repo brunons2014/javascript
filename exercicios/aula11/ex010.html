@@ -15,9 +15,9 @@
     </div>
     <script>
         function calcular() { //aqui vai fazer toda a função calcular
-        var txtv = window.document.getElementById('txtvel')//aqui vai ser a ligação do javascript com a caixa de texto txtvel
+        var txtv = window.document.getElementById('txtvel')//aqui vai ser a ligação do javascript com a caixa de texto txtvel e vai pegar o texto digitado
         var res = window.document.querySelector('div#res')//Aqui é onde vai ser escrito todos os textos na div do html
-        var vel = Number(txtv.value) //aqui ele vai pegar o valor que está em txtv.value
+        var vel = Number(txtv.value) //aqui ele vai pegar o texto e converter em numero que está em txtv.value
         res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h</strong></p>`
         if (vel > 60) { //aqui é a condição se a velocidade for maior que 60 ele mostrará esse texto
             res.innerHTML += `<p>Voce está <strong>MULTADO</strong> por excesso de velocidade</p>`

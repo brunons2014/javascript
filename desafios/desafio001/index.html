@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio001js</title>
+    <style>
+        body {
+            background: linear-gradient(to top,blue, rgb(9, 9, 117) ) fixed;
+            color: white;
+        }
+
+        main {
+            width: 400px;
+            height: 200px;
+            background-color: white;
+            text-align: center;
+            padding-top: 50px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.514);
+            box-shadow: 0.1em 0.1em 0.6em black;
+            border-radius: 15px;
+            margin-top: 200px;
+        }
+
+        main h1 {
+            color: white;
+            text-shadow: 0.1em 0.1em 0.3em black;
+        }
+
+        main vid {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Qual é o seu país</h1>
+           <input type="text" name="pais" id="pais">
+           <input type="button" value="Enviar" value="verificar" onclick="analise()">
+           <div id="res">
+    </main>
+
+   </div>
+   <script>
+       function analise(){
+           var pais1 = document.getElementById('pais')
+           var res = document.getElementById('res')
+
+           var vel = pais1.value
+           
+           if (vel == "Brasil"){
+               res.innerHTML += `<p>Você é um brasileiro e pertence a nação eleita</p>`
+           } else{
+               res.innerHTML += `<p>Ahaa então você é um gringo e não pertence a nação eleita!</p>`
+           }
+           res.innerHTML += `<p>Todos somos abençoados por Deus</p>`
+       }
+   </script> 
+</body>
+</html>
