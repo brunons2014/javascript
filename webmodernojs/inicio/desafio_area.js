@@ -2,5 +2,5 @@
 
 let raio = 10;
 let PI = 3.14;
-
-console.log("A area do raio é " + PI * raio * raio + "²")
+let areaCirc = PI * raio * raio
+console.log("A area do raio é " + areaCirc + "m²")
